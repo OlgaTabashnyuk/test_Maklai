@@ -1,0 +1,37 @@
+.contacts-list {
+  display: grid;
+  gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 48px;
+  }
+}
+
+.card-container {
+  padding: 32px 24px;
+  max-width: 100%;
+  background-color: $white;
+  border-radius: 2px;
+  border: 1px solid rgba(234, 234, 237, 0.5);
+}
+
+.user-title {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.user-item-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Open-Sans', sans-serif;
+}
+
+.user-item-info-container a:any-link {
+  color: $mainTextColor;
+}

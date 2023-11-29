@@ -1,0 +1,20 @@
+{{#each data}}
+  <li>
+    <div class='card-container'>
+      <h2 class='user-title'>
+        {{firstname}}
+        {{lastname}}
+      </h2>
+      <div class='user-item-info-container'>
+        <p> {{email}}</p>
+        <p> {{phone}} </p>
+        <p> {{birthday}} </p>
+        <p> {{gender}} </p>
+        <p>
+          <a href='#'> {{cutWebSite website}}</a>
+        </p>
+      </div>
+
+    </div>
+  </li>
+{{/each}}

@@ -1,6 +1,6 @@
 const refs = {
   formInputRef: document.querySelector('#bday'),
-  contactsList: document.querySelector('.contacts_list'),
+  contactsList: document.querySelector('.contacts-list'),
 };
 
 export default refs;

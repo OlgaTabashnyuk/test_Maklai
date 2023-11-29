@@ -1,0 +1,32 @@
+.button {
+  height: 51px;
+  width: 100%;
+  padding: 13px 32px;
+  border-radius: 2px;
+  border: none;
+  background-color: $buttonColor;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: $white;
+  box-shadow: 2px 2px 4px rgba(13, 50, 108, 0.4);
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+
+  &:active {
+    background-color: #1a4385;
+    box-shadow: 0px 8px 43px rgba(10, 98, 239, 0.6);
+    transform: transform 350ms linear;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 206px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 256px;
+  }
+}

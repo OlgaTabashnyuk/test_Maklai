@@ -10,28 +10,31 @@
 </head>
 
 <body>
-  <section class="wrapper">
-    <div class="container">
-      <h1 class="title">Виберіть дату народження</h1>
+
+  <div class="container">
+    <div class="form-container">
+      <h1 class="main-title">Виберіть дату народження</h1>
       <form id="bday" class="form">
-        <div class="input_start">
-          <label class='input_label' for="start_date">Від:</label>
-          <input id="start_date" type="date" />
+
+        <div class="input-block">
+          <label class='input-label' for="startDate">Від:</label>
+          <input id="startDate" type="date" class="date-input" />
         </div>
 
-        <div class="input_end">
-          <label class='input_label' for="end_date">До:</label>
-          <input id="end_date" type="date" />
+        <div class="input-block">
+          <label class='input-label' for="endDate">До:</label>
+          <input id="endDate" type="date" class="date-input" />
         </div>
 
-        <button class="button" type="submit">Оновити</button>
+        <button type="submit" class="button">Оновити</button>
       </form>
-
-      <ul class="contacts_list">
-        <!-- Список <li>  -->
-      </ul>
     </div>
-  </section>
+    <ul class="contacts-list">
+      <!-- Список <li>  -->
+    </ul>
+
+  </div>
+
 </body>
 
 </html>

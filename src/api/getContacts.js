@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { checkDateRange } from './checkDateRange';
+import { checkDateRange } from '../utils/checkDateRange';
 
 const BASE_URL = 'https://fakerapi.it/api/v1/persons';
 

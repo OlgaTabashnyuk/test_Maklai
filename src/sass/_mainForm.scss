@@ -1,0 +1,28 @@
+.form-container {
+  width: 353px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    width: 714px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 46px;
+    width: 864px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 28px;
+  background-color: $formBackgroundColor;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 24px;
+    padding: 24px;
+  }
+}

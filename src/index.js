@@ -1,6 +1,6 @@
-import getAllContacts from './contacts/getContacts';
+import getAllContacts from './api/getContacts';
 import refs from './contacts/refs';
-import contactCard from './contacts/contactCard.hbs';
+import contactCard from './template/contactCard.hbs';
 import Handlebars from 'handlebars';
 
 Handlebars.registerHelper('cutWebSite', string => {
@@ -12,13 +12,16 @@ function createMarkup(ref, value) {
 }
 
 bday.onsubmit = async event => {
-  event.preventDefault();
-  refs.contactsList.innerHTML = '';
+  try {
+    event.preventDefault();
+    refs.contactsList.innerHTML = '';
 
-  const startDate = bday.start_date.value;
-  const endDate = bday.end_date.value;
+    const startDate = bday.startDate.value;
+    const endDate = bday.endDate.value;
 
-  const contacts = await getAllContacts(startDate, endDate);
-
-  createMarkup(refs.contactsList, contactCard(contacts.data));
+    const contacts = await getAllContacts(startDate, endDate);
+    createMarkup(refs.contactsList, contactCard(contacts.data));
+  } catch (error) {
+    console.log(error.message);
+  }
 };
